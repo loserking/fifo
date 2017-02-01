@@ -1,0 +1,25 @@
+$date
+    Feb  1, 2017  10:17:51
+$end
+$version
+    TOOL:	ncsim	10.20-s114
+$end
+$timescale
+    100 ps
+$end
+
+$scope module tb_fifo $end
+$var parameter 32 !    width  $end
+$var parameter 32 "    depth  $end
+$var parameter 32 #    bits  $end
+$var parameter 32 $    nPattern  $end
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b1010 $
+b10 #
+b100 "
+b1000 !
+$end
+#10150

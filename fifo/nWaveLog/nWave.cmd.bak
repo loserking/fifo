@@ -1,0 +1,35 @@
+wvResizeWindow -win $_nWave1 54 237 960 332
+wvResizeWindow -win $_nWave1 -4 1 1680 987
+wvConvertFile -win $_nWave1 -o "/home/raid7_2/user04/r04133/fifo/fifo.vcd.fsdb" \
+           "/home/raid7_2/user04/r04133/fifo/fifo.vcd"
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 {/home/raid7_2/user04/r04133/fifo/fifo.vcd.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/tb_fifo"
+wvGetSignalSetScope -win $_nWave1 "/tb_fifo"
+wvGetSignalSetScope -win $_nWave1 "/tb_fifo"
+wvGetSignalSetScope -win $_nWave1 "/tb_fifo"
+wvGetSignalClose -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/tb_fifo"
+wvGetSignalSetScope -win $_nWave1 "/tb_fifo"
+wvGetSignalSetScope -win $_nWave1 "/tb_fifo"
+wvGetSignalSetScope -win $_nWave1 "/tb_fifo"
+wvGetSignalSetScope -win $_nWave1 "/tb_fifo"
+wvGetSignalSetScope -win $_nWave1 "/tb_fifo"
+wvSetCursor -win $_nWave1 309.326859
+wvSetCursor -win $_nWave1 356.235767
+wvSelectGroup -win $_nWave1 {G1}
+wvSelectGroup -win $_nWave1 {G1}
+wvResizeWindow -win $_nWave1 54 237 960 332
+wvResizeWindow -win $_nWave1 -4 1 1680 987
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/tb_fifo"
+wvGetSignalSetScope -win $_nWave1 "/tb_fifo"
+wvGetSignalSetScope -win $_nWave1 "/tb_fifo"
+wvGetSignalSetScope -win $_nWave1 "/tb_fifo"
+wvGetSignalSetScope -win $_nWave1 "/tb_fifo"
+wvGetSignalSetScope -win $_nWave1 "/"
+wvGetSignalSetSignalFilter -win $_nWave1 "*"
+wvGetSignalSetSignalFilter -win $_nWave1 "*nTX"
+wvExit

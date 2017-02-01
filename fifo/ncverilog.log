@@ -1,0 +1,45 @@
+ncverilog: 10.20-s114: (c) Copyright 1995-2012 Cadence Design Systems, Inc.
+TOOL:	ncverilog	10.20-s114: Started on Feb 01, 2017 at 10:17:50 CST
+ncverilog
+	tb_fifo.v
+	fifo.v
+Recompiling... reason: file './fifo.v' is newer than expected.
+	expected: Wed Feb  1 10:16:48 2017
+	actual:   Wed Feb  1 10:17:49 2017
+file: fifo.v
+	module worklib.fifo:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.fifo:v <0x40c67346>
+			streams:   6, words:  6303
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                   2       2
+		Registers:                21      21
+		Scalar wires:              6       -
+		Vectored wires:            2       -
+		Always blocks:             4       4
+		Initial blocks:            2       2
+		Pseudo assignments:        2       2
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.tb_fifo:v
+Loading snapshot worklib.tb_fifo:v .................... Done
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+ncsim: *W,DVEXACC: some objects excluded from $dumpvars due to access restrictions, use +access+r on command line for access to all objects.
+            File: ./tb_fifo.v, line = 30, pos = 10
+           Scope: tb_fifo
+            Time: 0 FS + 0
+
+
+Congratulations!! Your Verilog Code is correct!!
+
+Simulation complete via $finish(1) at time 1015 NS + 0
+./tb_fifo.v:55 		$finish;
+ncsim> exit
+TOOL:	ncverilog	10.20-s114: Exiting on Feb 01, 2017 at 10:17:51 CST  (total: 00:00:01)
